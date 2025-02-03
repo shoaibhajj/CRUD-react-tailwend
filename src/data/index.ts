@@ -20,6 +20,9 @@ export const productList: IProduct[] = [
       "#645CBB",
       "#FF0032",
       "#820000",
+      "#13005A",
+      "#1F8A70",
+      "#84D2C5",
     ],
     category: {
       name: "Nike",
@@ -165,7 +168,6 @@ export const colors: string[] = [
   "#a855f7",
   "#2563eb",
   "#84D2C5",
-  "#13005A",
   "#A31ACB",
   "#FF6E31",
   "#3C2A21",
@@ -173,6 +175,11 @@ export const colors: string[] = [
   "#CB1C8D",
   "#000000",
   "#645CBB",
+  "#FF0032",
+  "#820000",
+  "#13005A",
+  "#1F8A70",
+  "#CB1C7D",
 ];
 
 // export const categories: ICategory[] = [
