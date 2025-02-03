@@ -8,17 +8,18 @@ interface IProp {
 }
 
 const ProductCard = ({ product }: IProp) => {
-  const { imageURL, title, category, colors, description, price, id } = product;
+  const { imageURL, title, category, colors, description, price } = product;
   return (
     <div className="max-w-sm md:max-w-lg mx-auto md:mx-0 border border-gray-300 rounded-md p-2 flex flex-col">
       <Image imgUrl={imageURL} alt="product name" className="rounded-md mb-2" />
       <h3 className="text-gray-900 font-semibold  ">{title}</h3>
-      <p className="text-gray-500" >{textSlicer(description,70)}</p>
+      <p className="text-gray-500">{textSlicer(description, 70)}</p>
       <div className="flex space-x-3 text-center my-3">
-        {colors.map((color) => (
+        {colors.map((color, index) => (
           <span
-            className={`w-5 h-5  rounded-full cursor-pointer`}  
+            className={`w-5 h-5  rounded-full cursor-pointer`}
             style={{ background: color }}
+            key={index}
           />
         ))}
       </div>
