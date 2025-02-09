@@ -1,4 +1,4 @@
-import { colors } from "./../data/index";
+
 /**
  * 
  * @param product - product object (  title: string;

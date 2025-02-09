@@ -1,5 +1,5 @@
-import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
-import { ReactNode, useState } from "react";
+import {  Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
+import { ReactNode } from "react";
 
 interface IProp {
   isOpen: boolean;
@@ -9,7 +9,7 @@ interface IProp {
   children: ReactNode;
 }
 
-const Modal = ({ isOpen, close, open, title, children }: IProp) => {
+const Modal = ({ isOpen, close,  title, children }: IProp) => {
   return (
     <>
       <Dialog

@@ -4,7 +4,7 @@ import Modal from "./components/ui/Modal";
 import { categories, colors, formInputsList, productList } from "./data";
 import Button from "./components/ui/Button";
 import Input from "./components/ui/Input";
-import { ICategory, IProduct } from "./interfaces";
+import {  IProduct } from "./interfaces";
 import { productValidation } from "./Validation";
 import ErrorMessage from "./components/ErorrMessage";
 import CircleColor from "./components/CircleColor";
@@ -102,7 +102,7 @@ const App = () => {
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const { title, description, imageURL, price, colors } = product;
+    const { title, description, imageURL, price } = product;
     const errors = productValidation({
       title,
       description,
